@@ -14,7 +14,6 @@ tape('should respond hello', (t) => {
     t.end()
   })
 })
-
 tape('should respond b64', (t) => {
   jsonist.get(`${urlBase}/b64/hello`, (err, body) => {
     if (err) t.error(err)
